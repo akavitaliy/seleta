@@ -1,0 +1,194 @@
+<body>
+    
+<div class="slide v5">
+    <div class="js-slider-v4">
+        <div class="slide-img">
+            <img src="/vendor/img/slide/baner1.jpg" alt="" class="img-responsive">
+            <div class="box-center content4">
+                <a href="" class="tag-title">#Горячее лето</a>
+                <h3>Новая <br>  Коллекция '21</h3>
+                <a href="" class="slide-btn">Купить</a>
+            </div>
+        </div>
+        <div class="slide-img">
+            <img src="/vendor/img/slide/baner2.jpg" alt="" class="img-responsive">
+            <div class="box-center content4">
+                <a href="" class="tag-title" >#Горячее лето</a>
+                <h3>Новоя <br>  Коллекция '21</h3>
+                <a href="" class="slide-btn">Купить</a>    
+            </div>
+        </div>
+        
+    </div>
+    <div class="custom">
+        <div class="pagingInfo"></div>
+    </div>
+</div>
+<!-- content -->
+<!-- End content -->
+<div class="collection-3 pad">
+    <div class="container container-content">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="heading pad-text text-center">
+                    <h3><a href="">Лучший <br>дизайн '21</a></h3>
+                </div>
+                <div class="collection-img hover-images">
+                        <img src="/vendor/img/home6/category-8.jpg" alt="" class="img-responsive">
+                    <div class="box-center content">
+                        <h2 style="color: white;">Слитные</h2>
+                        <h3 style="color: white;">купальники</h3>
+                        <a href="" class="shop-now" style="color: white;">Купить</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="collection-img hover-images">
+                        <img src="/vendor/img/home6/category-9.jpg" alt="" class="img-responsive">
+                    <div class="box-center content v2">
+                        <h2 style="color: white;">Раздельные</h2>
+                        <h3 style="color: white;">купальники</h3>
+                        <a href="" class="shop-now" style="color: white;">Купить</a>
+                    </div>
+                </div>
+                <div class="heading-bottom pad-text text-center">
+                    
+                        <a href=""><span>Посмотреть все купальники</span><i class="zoa-icon-right-arrow"></i></a>
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="zoa-product pad6">
+    <h3 class="title text-center">последнее поступление</h3>
+    <div class="container">
+        <div class="row">
+
+            <% @last_products.each do |item| %>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-item">
+                    <div class="product-img">
+                        <a href="/details/<%= item.id %>"><img src="<%= item.path_to_litle_image %>" alt="" class="img-responsive"></a>
+                        <div class="ribbon zoa-new"><span>New</span></div>
+                        <div class="product-button-group">
+                            <a href="<%= item.path_to_image %>" class="zoa-btn zoa-quickview">
+                                <span class="zoa-icon-quick-view"></span>
+                            </a>
+                            <a href="#" class="zoa-btn zoa-wishlist">
+                                <span class="zoa-icon-heart"></span>
+                            </a>
+                            <a href="#" class="zoa-btn zoa-addcart">
+                                <span class="zoa-icon-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-info text-center">
+                        <h3 class="product-title">
+                            <a href="/details/<%= item.id %>"><%= item.title %></a>
+                        </h3>
+                        <div class="product-price">
+                            <span><%= item.price %> руб</span>
+                        </div>
+                    </div>
+                </div>
+            <% end %>          
+        </div>
+        
+        <div class="text-center">
+            <a href="" class="zoa-btn btn-loadmore">Смотреть всё</a>
+        </div>
+        </div>
+    </div>
+</div>
+    <div class="testimonial v2">
+        <div class="container">
+            <div class="owl-carousel owl-theme js-owl-test">
+            <div class="testimonial-item">
+                <div class="content text-center">
+                    <p> "I was recently at your store, what a delight to find you! Thank you, not<br> only for your expertise but also for you encouragement in making more <br>conscientious choices!"</p>
+                    <a href="" class="author">
+                        @Paul Hawken
+                    </a>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="content text-center">
+                    <p> "I was recently at your store, what a delight to find you! Thank you, not<br> only for your expertise but also for you encouragement in making more <br>conscientious choices!"</p>
+                    <a href="" class="author">
+                        @Paul Hawken
+                    </a>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="content text-center">
+                    <p> "I was recently at your store, what a delight to find you! Thank you, not<br> only for your expertise but also for you encouragement in making more <br>conscientious choices!"</p>
+                    <a href="" class="author">
+                        @Paul Hawken
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="zoa-blog v3 pad">
+        <h3 class="title text-center">новости</h3>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="blog-img">
+                        <a href="" class="hover-images">
+                            <img class="img-responsive" src="/vendor/img/home6/blog_1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <a href="" class="blog-meta-tag v2">#fashion</a>
+                            <span class="blog-meta-date">october 7, 2018</span>
+                        </div>
+                        <h3><a href="">Soft Cotton Mix Weave Turtleneck</a></h3>
+                        <a href="" class="btn-read-more"><i class="zoa-icon-right-arrow"></i>Read more</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="blog-img">
+                        <a href="" class="hover-images">
+                            <img class="img-responsive" src="/vendor/img/home6/blog_2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <a href="" class="blog-meta-tag v2">#fashion</a>
+                            <span class="blog-meta-date">october 7, 2018</span>
+                        </div>
+                        <h3><a href="">8 Fashion Photographers in UK</a></h3>
+                        <a href="" class="btn-read-more"><i class="zoa-icon-right-arrow"></i>Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="newsletter v2">
+        <div class="container">    
+            <div class="row">
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    
+                        <h3>≥ get in touch for sale</h3>
+                </div>
+                <div class="col-md-7 col-sm-6 col-xs-12 flex-end">
+                    <form class="form_newsletter" action="#" method="post">
+                        <input type="email" value="" placeholder="Enter your emaill" name="EMAIL" id="mail" class="newsletter-input form-control">
+                        <button id="subscribe" class="button_mini zoa-btn" type="submit">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</body>
+
