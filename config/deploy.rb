@@ -6,6 +6,8 @@ set :repo_url, "git@github.com:akavitaliy/seleta.git"
 
 set :deploy_to, "/home/seletaby/seleta"
 
+set :ssh_options, { :forward_agent => true }
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
