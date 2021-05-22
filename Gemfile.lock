@@ -12,7 +12,18 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    airbrussh (1.4.0)
+      sshkit (>= 1.6.1, != 1.7.0)
     bond (0.5.1)
+    capistrano (3.16.0)
+      airbrussh (>= 1.0.0)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (>= 1.9.0)
+    capistrano-bundler (2.0.1)
+      capistrano (~> 3.1)
+    capistrano-passenger (0.2.1)
+      capistrano (~> 3.0)
     concurrent-ruby (1.1.8)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
@@ -20,6 +31,9 @@ GEM
     multi_json (1.15.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    net-scp (3.0.0)
+      net-ssh (>= 2.6.5, < 7.0.0)
+    net-ssh (6.1.0)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
@@ -50,6 +64,9 @@ GEM
       sinatra (= 2.1.0)
       tilt (~> 2.0)
     sqlite3 (1.4.2)
+    sshkit (1.21.2)
+      net-scp (>= 1.1.2)
+      net-ssh (>= 2.8.0)
     tilt (2.0.10)
     tux (0.3.0)
       ripl (>= 0.3.5)
@@ -65,6 +82,9 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  capistrano
+  capistrano-bundler
+  capistrano-passenger
   rake
   sinatra
   sinatra-activerecord

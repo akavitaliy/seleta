@@ -6,6 +6,9 @@ gem "activerecord"
 gem "sinatra-activerecord"
 gem "sinatra-contrib"
 gem "rake"
+gem "capistrano"
+gem "capistrano-bundler"
+gem "capistrano-passenger"
 
 
 group :development do 

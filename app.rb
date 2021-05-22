@@ -51,8 +51,10 @@ post '/admin' do
   end
   
   @c = Product.new params[:product]
+
   @path = params[:files][:filename]
   @path2 = params[:files2][:filename]
+
   @c.path_to_litle_image = "/vendor/img/products/litle/#{@path}"
   @c.path_to_image = "/vendor/img/products/big/#{@path2}"
   @c.save
